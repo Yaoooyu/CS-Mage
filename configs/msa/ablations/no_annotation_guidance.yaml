@@ -1,5 +1,0 @@
-base_config: ../mage_fusion.yaml
-variant: no_annotation_guidance
-losses: {L_ta: false, L_pa: false}
-modules: {agreement_attention_bias: true, pairwise_guided_routing: true, disagreement_expert: true}
-mixup: {enabled: true}

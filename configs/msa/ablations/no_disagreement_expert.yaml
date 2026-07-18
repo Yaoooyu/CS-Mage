@@ -1,5 +1,0 @@
-base_config: ../mage_fusion.yaml
-variant: no_disagreement_expert
-losses: {L_ta: true, L_pa: true}
-modules: {agreement_attention_bias: true, pairwise_guided_routing: true, disagreement_expert: false, expert_gate: two_expert_renormalized}
-mixup: {enabled: true}
