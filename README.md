@@ -186,9 +186,6 @@ python src/asr/prepare_data.py --help
 python src/asr/run_inference.py --help
 python src/asr/run_funasr_baseline.py --help
 python src/asr/run_finetune.py --help
-
-cd src/msa
-python run_mage_fusion.py --root ${CS_MAGE_DATA_ROOT} --run-dir ${CS_MAGE_OUTPUT_ROOT} --fold 0 --variant full --seed 20260715 --epochs 180 --tau 1.0 --lta 0.01 --lpa 0.01
 ```
 
 For MSA, point `--root` to a local directory whose `data/` subdirectory contains
