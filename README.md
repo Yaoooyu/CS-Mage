@@ -17,8 +17,7 @@ metadata, configuration records, and documentation for the CS-Mage protocols.
 
 > **Pre-publication release candidate.** Do not publish this repository until
 > the project license, dataset access terms, and third-party baseline licenses
-> have been verified. See [LICENSE_PLACEHOLDER.md](LICENSE_PLACEHOLDER.md) and
-> [docs/BASELINE_SOURCES.md](docs/BASELINE_SOURCES.md).
+> have been verified. See [docs/BASELINE_SOURCES.md](docs/BASELINE_SOURCES.md).
 
 ## Overview
 
