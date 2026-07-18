@@ -13,27 +13,11 @@ train/validation/test split files in `../splits/asr/` to reproduce the reported
 protocols.
 
 ## Ethics and data use
-
-All participants were informed of the purpose of data collection, the types of
-data collected, the intended research use, and the potential public release of
-the dataset before participation. Written informed consent was obtained from
-all adult participants. For participants under 18 years of age, written consent
-was obtained from parents or legal guardians, together with participant assent
-when appropriate. Participation was voluntary, and participants could withdraw
-from data collection before the dataset was finalized.
-
-The collected data are released exclusively for non-commercial scientific
-research and educational purposes. Users must not use the dataset for commercial
-exploitation, identity recognition, speaker identification, facial recognition,
-surveillance, or any purpose that may harm, discriminate against, or stigmatize
-individuals or demographic groups. Redistribution of the original data to
-unauthorized third parties is prohibited. Users are expected to comply with this
-data-use statement and all applicable ethical, privacy, and data-protection
-requirements.
-
-To reduce privacy risks, the released metadata do not contain participant names,
-contact information, precise addresses, or other directly identifying personal
-information. Age information is provided only in the form necessary for
-benchmark analysis. Demographic statistics are intended only to describe the
-composition of the dataset and must not be interpreted as evidence of inherent
-differences among age or gender groups.
+All videos and recordings included in CS-Mage were collected with
+the consent or authorization of the relevant individuals and rights
+holders, including field-interview participants, television program
+producers, influencers, bloggers, and other content creators. For participants under 18 years of age, additional consent was obtained from their
+parents or legal guardians. The dataset is released exclusively for
+non-commercial scientific research and educational purposes and
+must not be used for identity recognition, surveillance, commercial
+exploitation, or other potentially harmful applications.
