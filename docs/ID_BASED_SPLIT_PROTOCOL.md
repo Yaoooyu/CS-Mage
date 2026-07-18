@@ -29,7 +29,3 @@ contains 760 training, 160 validation, and 165 test samples.
 4. Keep the assignments unchanged when reproducing the reported results.
 
 ## Scope and limitation
-
-The index defines a **sample-level** protocol. `sample_id` identifies a clip,
-not a verified unique speaker. It must not be interpreted as a speaker ID, and
-the protocol must not be described as speaker-independent.
