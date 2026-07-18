@@ -1,4 +1,0 @@
-base_config: whisper_inference.yaml
-model_family: FunASR Paraformer
-setting: Direct inference
-entrypoint: src/asr/run_funasr_baseline.py

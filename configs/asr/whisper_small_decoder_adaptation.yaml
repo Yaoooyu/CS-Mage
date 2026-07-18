@@ -1,4 +1,0 @@
-base_config: whisper_inference.yaml
-setting: Decoder adaptation
-entrypoint: src/asr/run_finetune.py
-note: Exact trainable layers and checkpoint-selection details require verification before release.
