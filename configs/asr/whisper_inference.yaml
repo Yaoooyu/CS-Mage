@@ -1,0 +1,7 @@
+protocol: fixed ASR split
+data_root: ${CS_MAGE_ASR_DATA_ROOT}
+language: zh
+task: transcribe
+setting: Direct inference
+normalization: src/asr/normalize_text.py
+evaluation: src/asr/evaluate_asr.py
