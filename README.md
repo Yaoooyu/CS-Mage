@@ -71,7 +71,8 @@ data-use conditions and ethical safeguards.
 
 ### Multimodal sentiment analysis
 
-- Sample-level stratified five-fold evaluation, **not** speaker-independent.
+- Fixed sample-ID stratified five-fold evaluation used by MAGE-Fusion and all
+  MSA baselines.
 - 1,085 samples total; every fold has 759 train / 109 validation / 217 test.
 - Random seed: `20260715`.
 - Validation data select the model; test data are used only for final evaluation.
@@ -80,11 +81,12 @@ data-use conditions and ethical safeguards.
 The five files in `splits/msa/` contain the sanitized protocol. Each sample
 appears in a test partition exactly once. The public CSV names are one-based
 (`fold_1.csv` to `fold_5.csv`); the retained legacy MSA runner uses its original
-zero-based `--fold` index.
+zero-based `--fold` index. `splits/id_split_index.csv` provides a single
+sample-ID lookup table covering all five folds and the ASR split.
 
 ### Speech recognition
 
-- Fixed duration-stratified sample-level split, **not** speaker-independent.
+- Fixed duration-stratified sample-ID split used by every ASR experiment.
 - 760 train / 160 validation / 165 test clips; seed `42`.
 - Shared normalization: Unicode NFKC, ASCII lowercase, retention of CJK,
   `0-9`, and `a-z`, then removal of punctuation, whitespace, emoji, and tags.
@@ -203,6 +205,7 @@ raw data to tracked files.
 | [docs/DATA_FORMAT.md](docs/DATA_FORMAT.md) | Expected MSA PKL and ASR manifest interfaces |
 | [docs/DATA_ACCESS_AND_ETHICS.md](docs/DATA_ACCESS_AND_ETHICS.md) | Dataset download links, permitted use, and ethics safeguards |
 | [docs/SPLITS.md](docs/SPLITS.md) | Fixed MSA and ASR split protocol |
+| [docs/ID_BASED_SPLIT_PROTOCOL.md](docs/ID_BASED_SPLIT_PROTOCOL.md) | Sample-ID lookup schema and usage |
 | [docs/CONFIGURATION.md](docs/CONFIGURATION.md) | MAGE-Fusion, ablation, and ASR configurations |
 | [docs/PREPROCESSING.md](docs/PREPROCESSING.md) | MSA feature and ASR waveform preprocessing |
 | [docs/BASELINE_SOURCES.md](docs/BASELINE_SOURCES.md) | Baseline implementation and release status |
@@ -212,3 +215,4 @@ raw data to tracked files.
 ## Citation
 
 Citation information will be added after publication.
+
