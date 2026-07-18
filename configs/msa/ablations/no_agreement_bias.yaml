@@ -1,0 +1,6 @@
+base_config: ../mage_fusion.yaml
+variant: lta_lpa_without_agreement_bias
+losses: {L_ta: true, L_pa: true}
+modules: {agreement_attention_bias: false, pairwise_guided_routing: true, disagreement_expert: true}
+mixup: {enabled: true}
+note: This is the same computation graph as the historical L_ta_plus_L_pa label; do not create a duplicate configuration.
