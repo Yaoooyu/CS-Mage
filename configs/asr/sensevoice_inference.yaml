@@ -1,0 +1,5 @@
+base_config: whisper_inference.yaml
+model_family: FunASR SenseVoice
+setting: Direct inference
+entrypoint: src/asr/run_funasr_baseline.py
+postprocess: remove language/emotion/audio-event tags before normalization
