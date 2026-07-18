@@ -15,9 +15,6 @@ CS-Mage is a benchmark for Changsha-dialect multimodal sentiment analysis (MSA)
 and automatic speech recognition (ASR). It provides the code, fixed split
 metadata, configuration records, and documentation for the CS-Mage protocols.
 
-> **Pre-publication release candidate.** Do not publish this repository until
-> the project license, dataset access terms, and third-party baseline licenses
-> have been verified. See [docs/BASELINE_SOURCES.md](docs/BASELINE_SOURCES.md).
 
 ## Overview
 
@@ -224,10 +221,4 @@ raw data to tracked files.
 | [docs/BASELINE_REFERENCES.md](docs/BASELINE_REFERENCES.md) | Baseline citations and upstream links |
 | [docs/RELEASE_INVENTORY.md](docs/RELEASE_INVENTORY.md) | Included and excluded materials |
 
-## Citation and license
 
-Citation information will be added after publication. No project license has
-yet been selected. Before public release, add a project license, a dataset
-card/access policy, and confirmed notices for third-party dependencies. Do not
-redistribute upstream baseline code, source media, or pretrained checkpoints
-unless their licenses explicitly permit it.
