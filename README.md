@@ -39,10 +39,10 @@ MFCC features are used only for MSA. ASR always consumes raw waveforms.
 
 ```text
 CS-Mage_release_candidate/
-├── configs/                  # Formal-v2, ablation, and ASR configuration records
+├── configs/                  # MAGE-Fusio, ablation, and ASR configuration records
 ├── splits/                   # Sanitized fixed MSA and ASR split metadata
 ├── src/
-│   ├── msa/                  # Formal-v2 MAGE-Fusion modules and MSA wrappers
+│   ├── msa/                  # MAGE-Fusion modules and MSA wrappers
 │   ├── training/             # CS-Mage adapters for additional baselines
 │   ├── asr/                  # ASR preparation, inference, adaptation, evaluation
 │   └── data/                 # Fold construction and BERT-input utilities
@@ -72,7 +72,7 @@ CS-Mage_release_candidate/
 - The MAGE-Fusion implementation and ablation runner.
 - MSA and ASR data interfaces, normalization, evaluation, and utility code.
 - Fixed MSA five-fold and ASR train/validation/test sample IDs.
-- Formal-v2, ablation, and ASR configuration records.
+-, ablation, and ASR configuration records.
 - CS-Mage-specific baseline wrappers, source notes, and citations.
 
 
@@ -103,14 +103,14 @@ zero-based `--fold` index.
 The ASR split CSVs contain sample IDs only. Map them to locally obtained WAV
 files and manifests; no absolute paths are stored in this repository.
 
-## Formal-v2 MAGE-Fusion
+## MAGE-Fusion
 
 The primary MSA method is **formal-v2 MAGE-Fusion**. It combines
 modality-specific encoders, modality-target and pairwise agreement learning,
 agreement-conditioned attention, aggregation/interaction/disagreement experts,
 an evidence gate, unimodal auxiliary classifiers, and synchronous Mixup.
 
-| Component | Formal-v2 setting |
+| Component | setting |
 |---|---|
 | Hidden dimension / prediction head | 192 / 192 → 256 → 128 |
 | Encoder / evidence / head dropout | 0.20 / 0.10 / 0.25 |
@@ -124,9 +124,9 @@ an evidence gate, unimodal auxiliary classifiers, and synchronous Mixup.
 This is **truncated Mixup**, not reflection Mixup. Do not replace it with
 `max(lambda_0, 1-lambda_0)`.
 
-Use `src/msa/run_formal_v2_complete.py` as the canonical formal-v2 and ablation
+Use `src/msa/run_formal_v2_complete.py` as the canonical and ablation
 runner. `run_mage_fusion_fold_v2.py` is a retained lower-level module; its
-command-line defaults are not the formal-v2 record. The authoritative settings
+command-line defaults are not the record. The authoritative settings
 are in [configs/msa/mage_fusion_formal_v2.yaml](configs/msa/mage_fusion_formal_v2.yaml).
 
 Formal-v2 ablation records are provided for only `L_ta`, without agreement bias,
@@ -215,7 +215,7 @@ raw data to tracked files.
 |---|---|
 | [docs/DATA_FORMAT.md](docs/DATA_FORMAT.md) | Expected MSA PKL and ASR manifest interfaces |
 | [docs/SPLITS.md](docs/SPLITS.md) | Fixed MSA and ASR split protocol |
-| [docs/CONFIGURATION.md](docs/CONFIGURATION.md) | Formal-v2, ablation, and ASR configurations |
+| [docs/CONFIGURATION.md](docs/CONFIGURATION.md) |, ablation, and ASR configurations |
 | [docs/PREPROCESSING.md](docs/PREPROCESSING.md) | MSA feature and ASR waveform preprocessing |
 | [docs/BASELINE_SOURCES.md](docs/BASELINE_SOURCES.md) | Baseline implementation and release status |
 | [docs/BASELINE_REFERENCES.md](docs/BASELINE_REFERENCES.md) | Baseline citations and upstream links |
