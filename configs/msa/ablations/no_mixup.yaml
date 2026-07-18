@@ -1,0 +1,5 @@
+base_config: ../mage_fusion_formal_v2.yaml
+variant: no_mixup
+losses: {L_ta: true, L_pa: true}
+modules: {agreement_attention_bias: true, pairwise_guided_routing: true, disagreement_expert: true}
+mixup: {enabled: false}
