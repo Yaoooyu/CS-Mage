@@ -57,23 +57,28 @@ CS-Mage_release_candidate/
 └── LICENSE_PLACEHOLDER.md
 ```
 
-### Included
+---
+### 🔗 Dataset
 
-- The formal-v2 MAGE-Fusion implementation and ablation runner.
+- **Google Drive**  
+  https://drive.google.com/drive/folders/1g5zbyc6ZMVdqC95yfTl4lZZSIkK9V_E5?usp=drive_link
+
+- **百度网盘**  
+     https://pan.baidu.com/s/1lYznkyVZ0GsaDKosHb9fKQ
+  提取码: 2cbi 
+
+- The dataset after feature extraction is in the file CS-Mage_fulldata.pkl.
+- The file contains all the data and does not differentiate between the training set, testing set and validation set. This is convenient for users to divide the dataset by themselves. If you want to synchronize with the article, please use 8:1:1 division, random_state=42, or contact the author.
+
+---
+
+- The MAGE-Fusion implementation and ablation runner.
 - MSA and ASR data interfaces, normalization, evaluation, and utility code.
 - Fixed MSA five-fold and ASR train/validation/test sample IDs.
 - Formal-v2, ablation, and ASR configuration records.
 - CS-Mage-specific baseline wrappers, source notes, and citations.
 
-### Not included
 
-- Raw video, WAV files, transcripts, feature PKLs, and other dataset files.
-- Checkpoints, pretrained weights, optimizer states, predictions, or large logs.
-- Third-party source trees whose redistribution permission is not verified.
-- OpenFace binaries, caches, Git history, credentials, and local absolute paths.
-
-The dataset must be obtained separately under its final access and usage terms.
-This code release does not itself distribute the dataset.
 
 ## Fixed evaluation protocols
 
