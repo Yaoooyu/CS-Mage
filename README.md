@@ -44,13 +44,6 @@ CS-Mage/
 ├── environment.yml
 ```
 
-### Included
-
-- The MAGE-Fusion implementation and ablation runner.
-- MSA and ASR data interfaces, normalization, evaluation, and utility code.
-- Fixed MSA five-fold and ASR train/validation/test sample IDs.
-- MAGE-Fusion, ablation, and ASR configuration records.
-- CS-Mage-specific baseline wrappers, source notes, and citations.
 
 ### Dataset access
 
