@@ -1,6 +1,6 @@
 # CS-Mage
 
-## A Cross-Age Multimodal Benchmark for Changsha Dialect Sentiment Analysis and Speech Recognition
+## A Multimodal Benchmark for Changsha Dialect Sentiment Analysis and Speech Recognition
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/3ffb7f87-aa79-453e-926c-1cfaab9d5e9f" alt="CS-MSASR Dataset Preview" width="400"/>
