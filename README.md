@@ -52,36 +52,13 @@ We introduce **CS-Mage**, the **first multimodal video dataset** for the Changsh
 
 We evaluated:
 
-- **11 mainstream multimodal sentiment analysis models**
+- **19 mainstream multimodal sentiment analysis models**
 - **8 speech recognition models** using:
-  - Direct inference
-  - Fine-tuning on CS-Mage
-
-## Result speech recognition models
-
-| Model | CER | WER |
-| :--- | :---: | :---: |
-| HMM-GMM | 133.44% | 133.44% |
-| MFCC+SVM | 111.54% | 111.51% |
-| Facebook/wav2vec2-large-960h | 99.88% | 1126.73% |
-| Jonatasgrosman/wav2vec2-large-xlsr-53-chinese-zh-cn | 82.06% | 116.22% |
-| Whisper-base | 77.62% | 200.66% |
-| Whisper-small | 138.32% | 138.32% |
-| Whisper-small* | 48.36% | 48.36% |
-| Paraformer-zh | 54.84% | 102.59% |
-| Paraformer | 60.44% | 98.15% |
-| Paraformer* | **34.24%** | **94.44%** |
-
-> **Note:** The model with * is fine-tuned.
-
-- The experiments evaluate a range of speech recognition models, including traditional methods, pre-trained models and end-to-end architectures. We use Character Error Rate (CER) and Word Error Rate (WER) as the main evaluation metrics. Among all models, the Paraformer series achieved the best performance. Among them, the fine-tuned Paraformer model (labeled as “*”) achieves a CER of 34.24% and a WER of 94.44% on CS- Mage, which is significantly better than the other models, indicating that it has strong modeling ability in adapting to dialectal speech, and verifying the advantages of non-autoregressive structure in dialect recognition. It also verifies the advantage of non-autoregressive structure in dialect recognition.
-- The pre-trained Transformer models show significant differences, depending on the language coverage of the model and whether it is adapted to the Chinese corpus. For example, the English corpus version, wav2vec2-large-960h (CER: 99.88%), can indicate that the model is completely wrong for the recognition task. Meanwhile, Whisper-small predicted texts are presented as tokens, so WER is effectively equivalent to CER, and both are compared in terms of “words”. Whisper-small* (fine-tuned version) outperforms its zero-sample version Whisper-base (CER: 48.36%), further indicating that the fine-tuning strategy for the target language is the key to improve the model's performance in the dialect recognition task.
-
-
+ 
 
 ---
 
 ### 📎 Citation
 
-For detailed citation information, please refer to our [citations.json](https://github.com/Yaoooyu/CS-MSASR/blob/main/citations.json) file.
+Wait for publish
 
