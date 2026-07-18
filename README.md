@@ -1,6 +1,6 @@
 # CS-Mage
 
-## A Cross-Age Multimodal Benchmark for Changsha Dialect Sentiment Analysis and Speech Recognition
+## A Multimodal Benchmark for Changsha Dialect Sentiment Analysis and Speech Recognition
 
 CS-Mage is a benchmark for Changsha-dialect multimodal sentiment analysis (MSA)
 and automatic speech recognition (ASR). This repository provides the code,
